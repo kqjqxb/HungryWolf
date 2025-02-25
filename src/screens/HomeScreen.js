@@ -13,7 +13,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 
-import SettingsScreen from './SettingsScreen';
 import RulesScreen from './RulesScreen';
 import ShopScreen from './ShopScreen';
 import LevelsScreen from './LevelsScreen';
@@ -215,8 +214,6 @@ const HomeScreen = () => {
             </TouchableOpacity>
           </View>
         </SafeAreaView>
-      ) : selectedScreen === 'Settings' ? (
-        <SettingsScreen setSelectedScreen={setSelectedScreen} selectedScreen={selectedScreen} />
       ) : selectedScreen === 'Rules' ? (
         <RulesScreen setSelectedScreen={setSelectedScreen} />
       ) : selectedScreen === 'Shop' ? (

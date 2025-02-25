@@ -12,9 +12,6 @@ import Svg, { Circle } from 'react-native-svg';
 
 const fontInter18ptRegular = 'Inter18pt-Regular';
 
-
-
-
 const levelPositions = [
   { x: 0.1, y: 0.1 },
   { x: 0.8, y: 0.2 },

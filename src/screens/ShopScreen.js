@@ -231,7 +231,7 @@ const ShopScreen = ({ setSelectedScreen }) => {
             opacity: 0
           }}>
           <Image
-            source={require('../assets/icons/infoIcon.png')}
+source={require('../assets/icons/bagIcon.png')}
             style={{
               width: dimensions.height * 0.028,
               height: dimensions.height * 0.028,

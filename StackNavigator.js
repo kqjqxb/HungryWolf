@@ -12,7 +12,6 @@ import { UserProvider, UserContext } from './src/context/UserContext';
 import { Provider, useDispatch } from 'react-redux';
 import store from './src/redux/store';
 import { loadUserData } from './src/redux/userSlice';
-import { AudioProvider, useAudio } from './src/context/AudioContext';
 
 
 const Stack = createNativeStackNavigator();
@@ -49,16 +48,16 @@ const AppNavigator = () => {
         const deviceId = await DeviceInfo.getUniqueId();
         const storageKey = `currentUser_${deviceId}`;
         const storedWolfUser = await AsyncStorage.getItem(storageKey);
-        const isOnbWasVisible = await AsyncStorage.getItem('isOnbWasVisible');
+        const isWolfOnbWasVisible = await AsyncStorage.getItem('isWolfOnbWasVisible');
 
         if (storedWolfUser) {
           setUser(JSON.parse(storedWolfUser));
           setIsHungryWolfOnbVisible(false);
-        } else if (isOnbWasVisible) {
+        } else if (isWolfOnbWasVisible) {
           setIsHungryWolfOnbVisible(false);
         } else {
           setIsHungryWolfOnbVisible(true);
-          await AsyncStorage.setItem('isOnbWasVisible', 'true');
+          await AsyncStorage.setItem('isWolfOnbWasVisible', 'true');
         }
       } catch (error) {
         console.error('Error loading of cur user', error);
@@ -84,12 +83,10 @@ const AppNavigator = () => {
 
   return (
     <NavigationContainer>
-      <AudioProvider>
         <Stack.Navigator initialRouteName={isHungryWolfOnbVisible ? 'OnboardingScreen' : 'Home'}>
           <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
           <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} options={{ headerShown: false }} />
         </Stack.Navigator>
-      </AudioProvider>
     </NavigationContainer>
   );
 };
