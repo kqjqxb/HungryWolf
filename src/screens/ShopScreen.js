@@ -99,7 +99,7 @@ const ShopScreen = ({ setSelectedScreen }) => {
       const ownedMeat = await AsyncStorage.getItem('ownedMeat');
       const ownedApples = await AsyncStorage.getItem('ownedApples');
       const ownedSossiges = await AsyncStorage.getItem('ownedSossiges');
-      
+
       setOwnedMeat(Number(ownedMeat) || 0);
       setOwnedApples(Number(ownedApples) || 0);
       setOwnedSossiges(Number(ownedSossiges) || 0);
@@ -108,8 +108,8 @@ const ShopScreen = ({ setSelectedScreen }) => {
   }, []);
 
   useEffect(() => {
-      console.log('ownedPowers:', ownedPowers);
-    }, [ownedPowers]);
+    console.log('ownedPowers:', ownedPowers);
+  }, [ownedPowers]);
 
 
   const handleBuyPower = async (power) => {
@@ -118,7 +118,7 @@ const ShopScreen = ({ setSelectedScreen }) => {
       return;
     }
 
-    if(power.id === 1) {
+    if (power.id === 1) {
       if (ownedMeat >= power.price) {
         setOwnedMeat(ownedMeat - power.price);
         setOwnedPowers([...ownedPowers, power.id]);
@@ -127,7 +127,7 @@ const ShopScreen = ({ setSelectedScreen }) => {
       } else {
         Alert.alert('Not enough meat');
       }
-    } else if(power.id === 2) {
+    } else if (power.id === 2) {
       if (ownedSossiges >= power.price) {
         setOwnedSossiges(ownedSossiges - power.price);
         setOwnedPowers([...ownedPowers, power.id]);
@@ -136,7 +136,7 @@ const ShopScreen = ({ setSelectedScreen }) => {
       } else {
         Alert.alert('Not enough sossiges');
       }
-    } else if(power.id === 3) {
+    } else if (power.id === 3) {
       if (ownedApples >= power.price) {
         setOwnedApples(ownedApples - power.price);
         setOwnedPowers([...ownedPowers, power.id]);
@@ -231,7 +231,7 @@ const ShopScreen = ({ setSelectedScreen }) => {
             opacity: 0
           }}>
           <Image
-source={require('../assets/icons/bagIcon.png')}
+            source={require('../assets/icons/bagIcon.png')}
             style={{
               width: dimensions.height * 0.028,
               height: dimensions.height * 0.028,
