@@ -1,0 +1,65 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Inter18pt-Bold.ttf",
+      "sha1": "518a0361a245a66b49bc24ae0137f38328197bdc"
+    },
+    {
+      "path": "src/assets/fonts/Inter18pt-BoldItalic.ttf",
+      "sha1": "3be7a4fdd0a2901f4607cb5d5914086cd87c3421"
+    },
+    {
+      "path": "src/assets/fonts/Inter18pt-Italic.ttf",
+      "sha1": "ec36f0b6431e16cae9c11f93832eae6dbad40b4a"
+    },
+    {
+      "path": "src/assets/fonts/Inter18pt-Medium.ttf",
+      "sha1": "e2d21cdc9730ce4d4bdccb3476413a5b79fe7d52"
+    },
+    {
+      "path": "src/assets/fonts/Inter18pt-Regular.ttf",
+      "sha1": "bd1976c1f019853ab6143ef1246e25aa66fd990e"
+    },
+    {
+      "path": "src/assets/fonts/Inter18pt-SemiBold.ttf",
+      "sha1": "f3e44abd6661d5b861e66db22f4f79a6c466cd00"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat-Bold.ttf",
+      "sha1": "c7d907722af4fb845ab97d515bb414f29651f000"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat-Light.ttf",
+      "sha1": "9dfbddad5025d8d224b4939e54c1a4ac8ac6015b"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat-Regular.ttf",
+      "sha1": "bb895d19b8a1fbe1c57fc89cac5da82fdc8fdef4"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat-SemiBold.ttf",
+      "sha1": "0754a3a23d8d68b0f0558df3109e0df86e968f24"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Bold.ttf",
+      "sha1": "632e6cea171b276e5dd1f13b152c702fbf562cee"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Medium.ttf",
+      "sha1": "3b8df618cd23e83843b16a8a32de1ddc9de44df4"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Regular.ttf",
+      "sha1": "b4893462f2289df6978f9462a63db9e64bcc9342"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-RegularItalic.ttf",
+      "sha1": "85063cfc8ebaa6d2605c794a41d23722bd508fc5"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Semibold.ttf",
+      "sha1": "9560ae412d73c7c9af72333db50464b4e597b0f9"
+    }
+  ]
+}
