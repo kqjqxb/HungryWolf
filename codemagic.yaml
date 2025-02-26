@@ -7,12 +7,12 @@ workflows:
       groups:
         - creds
       vars:
-        XCODE_WORKSPACE: "TapPlinkFlipMoments.xcworkspace" # <----
-        XCODE_SCHEME: "TapPlinkFlipMoments" # <----
-        BUNDLE_ID: "com.tapplink.flipmoments.app" # <----
-        APP_STORE_APP_ID: 6742375380 # <----
-        APP_STORE_CONNECT_KEY_ID: "4YNXN635Z8" # <----
-        APP_STORE_CONNECT_ISSUER_ID: "9f9a0f71-c69c-4184-b011-e310dea5f0b7" # <----
+        XCODE_WORKSPACE: "HungryWolf.xcworkspace" # <----
+        XCODE_SCHEME: "HungryWolf" # <----
+        BUNDLE_ID: "com.hungry.wolf.app" # <----
+        APP_STORE_APP_ID: 6742485199 # <----
+        APP_STORE_CONNECT_KEY_ID: "NZ4297WPJV" # <----
+        APP_STORE_CONNECT_ISSUER_ID: "d1042dc8-166f-4cc9-a47d-7ce0571c6438" # <----
         node: latest
         xcode: latest
         cocoapods: default
@@ -52,7 +52,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - efsunemrak1@gmail.com       # <----
+          - 1melekcente@gmail.com       # <----
         notify:
           success: true
           failure: false
