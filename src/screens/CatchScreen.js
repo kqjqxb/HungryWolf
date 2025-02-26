@@ -695,13 +695,8 @@ const CatchScreen = ({ setSelectedScreen, selectedLevel, setSelectedLevel }) => 
                     : require('../assets/images/wolfSkins/simpleWolf.png')
                   }
                   style={{
-                    // width: dimensions.height * 0.14,
-                    // height: dimensions.height * 0.14,
-
-
-                    
                     width: dimensions.height * 0.14,
-                    height: dimensions.height * 0.5,
+                    height: dimensions.height * 0.14,
                     alignSelf: 'center',
                     textAlign: 'center'
                   }}

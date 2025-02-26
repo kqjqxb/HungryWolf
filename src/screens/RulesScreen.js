@@ -39,8 +39,7 @@ const RulesScreen = ({ setSelectedScreen }) => {
       }}>
         <TouchableOpacity
           onPress={() => {
-            // setSelectedScreen('Home');
-            goBack();
+            setSelectedScreen('Home');
           }}
           style={{
             alignItems: 'center',
