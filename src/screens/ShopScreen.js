@@ -183,7 +183,7 @@ const ShopScreen = ({ setSelectedScreen }) => {
       }}>
         <TouchableOpacity
           onPress={() => {
-            setSelectedScreen('Home');
+            // setSelectedScreen('Home');
           }}
           style={{
             alignItems: 'center',
